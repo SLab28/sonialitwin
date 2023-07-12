@@ -1,6 +1,5 @@
 /* This is the CSS section where you can define the style of your elements */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Just+Me+Again+Down+Here&display=swap');
 * {
   box-sizing: border-box;
   padding: 0;
@@ -209,6 +208,145 @@ flex-direction: column;
   visibility:hidden;
 }
 
+.frame-56{
+  display: flex;
+  border: 1px none;
+  min-height: 229px;
+  min-width: 1249px;
+  width: 100%;
+}
+
+.frame-56 .frame{
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+}
+
+.frame-59{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+  height: 229px;
+  width: 1249px;
+}
+
+.frame-58{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 180px;
+  width: fit-content;
+}
+
+.frame-12{
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 10px;
+  width: fit-content;
+}
+
+.ing {
+  display: flex;
+  width: 9.3125rem;
+  flex-direction: column;
+  color: #000;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 144.023%;
+  position: relative;
+}
+
+.frame-57{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 125px;
+  width: fit-content;
+}
+
+.frame-13{
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: fit-content;
+}
+
+.interaction{
+  display: flex;
+  width: 199px;
+  height: 61px;
+  flex-direction: column;
+  margin-top: -1px;
+  position: relative;
+
+  color: #000;
+  font-family: Inter;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.creative{
+  display: flex;
+  width: 203px;
+  height: 61px;
+  flex-direction: column;
+  position: relative;
+  margin-top: -1px;
+
+  color: #000;
+  font-family: Inter;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.human{
+  display: flex;
+  width: 211px;
+  height: 61px;
+  flex-direction: column;
+  margin-top: -1px;
+  position: relative;
+
+  color: #000;
+  font-family: Inter;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+
+.biomimicry{
+  display: flex;
+  width: 175px;
+  height: 26px;
+  flex-direction: column;
+  position: relative;
+  white-space: nowrap;
+  margin-top: -1px;
+
+  color: #000;
+  font-family: Inter;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
 .frame-54 {
   align-items: center;
   display:flex;
@@ -277,3 +415,81 @@ flex-direction: column;
   height: 904px;
   flex-shrink: 0;
 }
+
+.overlap-group {
+  height: 454px;
+  margin-right: 46px;
+  margin-top: 100px;
+  position: relative;
+  width: 1249px;
+}
+
+.what {
+  display: flex;
+  width: 727px;
+  height: 93px;
+  flex-direction: column;
+
+  color: #000;
+  font-family: Just Me Again Down Here;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  position: relative;
+  top: 0;
+}
+
+.frame-60{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 121px;
+}
+
+.frame-3{
+  display: flex;
+  width: 13.8125rem;
+  height: 14.3125rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.375rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+
+}
+
+.frame-3 :hover{
+  background-color: #FFC429;
+}
+
+.frame-13-1 {
+  display: flex;
+  width: 13.3125rem;
+  height: 4.4375rem;
+  padding: 0.625rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.main-screen .frame-13-4{
+align-items: flex-start;
+display: flex;
+gap: 10px;
+height:71px;
+padding: 10px;
+position: realtive;
+}
+
+
+.frame-16 :hover{
+background-color: #FFC429;
+}
+
+
+
