@@ -11,7 +11,7 @@
   --bg-color: #ffffff;
   --accent-color: #FFC429;
   --text-color: #000000;
-  --font-family: Inter, sans-serif;
+  --font-family: Inter;
 }
 
 html {
@@ -32,18 +32,40 @@ html {
   
 }
 
+.logo {
+  color :rgb(0, 0, 0);/*This sets text color for logo*/
+  font-family :Inter,sans-serif;/*This sets font family for logo*/
+  font-weight :600;/*This sets font weight for logo*/
+  font-size :20px;/*This sets font size for logo*/
+  margin: 10px 30px;
+  text-decoration: none;
+  transition: all 2s ease-in-out;
+  cursor:pointer;
+}
+
+.logo:hover{
+  filter:blur(10px);
+}
+
 .navbar-item {
   color: rgb(0, 0, 0); /* This sets the text color of the navbar items */
   text-decoration: none; /* This removes the default underline from the links */
   display: inline-block; /* This makes the navbar items display in a row */
   padding: 10px; /* This adds some padding around the navbar items */
-  font-family: Inter, sans-serif; /* This sets the font family of the navbar items */
+  font-family: Inter; /* This sets the font family of the navbar items */
   font-weight: 600; /* This sets the font weight of the navbar items to semi bold */
   font-size: 20px; /* This sets the font size of the navbar items to 20 pixels */
   margin: 10px 30px;
   position: relative;
+  transition: all 2s ease-in-out;
+  cursor:pointer;
 }
-.navbar-item::after{
+
+.navbar-item:hover{
+  filter:blur(10px);
+}
+
+/*.navbar-item::after{
   content:'';
   width:0;
   height: 3px;
@@ -52,11 +74,26 @@ html {
   left:0;
   bottom:0;
   transition: 1s ease;
+}*/
+
+/*.logo::after{
+  content:'';
+  width:0;
+  height: 3px;
+  background: #FFC429;
+  position: relative;
+  left:0;
+  bottom:0;
+  transition: 1s ease;
+}*/
+
+/*.navbar-item:hover::after {
+  width:100%; /* This changes the background color of the navbar items when you hover over them 
 }
 
-.navbar-item:hover::after {
-  width:100%; /* This changes the background color of the navbar items when you hover over them */
-}
+.logo:hover::after {
+  width:100%; 
+}*/
 
 .nice-to-meet-you{
   color: #000;
@@ -102,14 +139,6 @@ html {
   position: relative;
   white-space: nowrap;
   width: fit-content;
-}
-
-.logo {
-   color :rgb(0, 0, 0);/*This sets text color for logo*/
-   font-family :Inter,sans-serif;/*This sets font family for logo*/
-   font-weight :600;/*This sets font weight for logo*/
-   font-size :20px;/*This sets font size for logo*/
-   margin: 10px 30px;
 }
 
 .hidden {
@@ -194,12 +223,14 @@ footer p { font-size: 1rem; margin-top: 12px;text-align: center; font-family :In
 .project p { font-size: 1rem; margin-top: 8px; font-family :Inter,sans-serif;}
 
 
-.main-screen{
-align-items: flex-end;
+.main{
+align-items: center;
 background-color: #ffffff;
 border: 1px none;
 display: flex;
 flex-direction: column;
+height: 3374px;
+width: 1441px;
 }
 
 .hidden,
@@ -211,14 +242,10 @@ flex-direction: column;
 .frame-56{
   display: flex;
   border: 1px none;
-  min-height: 229px;
-  min-width: 1249px;
-  width: 100%;
-}
-
-.frame-56 .frame{
+  width: fit-content;
+  gap:10px;
   align-items: flex-start;
-  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
@@ -228,7 +255,8 @@ flex-direction: column;
   align-items: flex-start;
   gap: 28px;
   height: 229px;
-  width: 1249px;
+  width: 1361px;
+  position: relative;
 }
 
 .frame-58{
@@ -237,6 +265,8 @@ flex-direction: column;
   align-items: flex-start;
   gap: 180px;
   width: fit-content;
+  position: relative;
+  width: 1331px;
 }
 
 .frame-12{
@@ -245,7 +275,15 @@ flex-direction: column;
   align-items: flex-start;
   gap: 10px;
   width: fit-content;
+  position: relative;
+  transition: all 2s ease-in-out;
+  cursor:pointer;
 }
+
+.frame-12:hover{
+  filter:blur(10px);
+}
+
 
 .ing {
   display: flex;
@@ -265,7 +303,8 @@ flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 125px;
-  width: fit-content;
+  width: 1361px;
+  position: relative;
 }
 
 .frame-13{
@@ -275,6 +314,13 @@ flex-direction: column;
   align-items: flex-start;
   gap: 10px;
   width: fit-content;
+  position: relative;
+  transition: all 2s ease-in-out;
+  cursor:pointer;
+}
+
+.frame-13:hover{
+  filter:blur(10px);
 }
 
 .interaction{
@@ -332,10 +378,9 @@ flex-direction: column;
 .biomimicry{
   display: flex;
   width: 175px;
-  height: 26px;
+  height: 61px;
   flex-direction: column;
   position: relative;
-  white-space: nowrap;
   margin-top: -1px;
 
   color: #000;
@@ -417,18 +462,38 @@ flex-direction: column;
 }
 
 .overlap-group {
-  height: 454px;
-  margin-right: 46px;
+  height: 500px;
+  margin-right: 1px;
   margin-top: 100px;
   position: relative;
-  width: 1249px;
+  width: 1440px;
+}
+
+
+.frame-60{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 121px;
+  position: relative;
+  margin-top: 212px;
+  width: 1361px;
+}
+
+
+.frame-61{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  padding: 0px 69px;
+  width: fit-content;
 }
 
 .what {
-  display: flex;
   width: 727px;
   height: 93px;
-  flex-direction: column;
+  margin-top: -1px;
 
   color: #000;
   font-family: Just Me Again Down Here;
@@ -441,12 +506,6 @@ flex-direction: column;
   top: 0;
 }
 
-.frame-60{
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 121px;
-}
 
 .frame-3{
   display: flex;
