@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonia Litwin - CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 7pt;
+            line-height: 1.2;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding-top: 0px;
+            margin-top: 0;
+            padding: 0px;
+        }
+
+        #visiting-associate {
+            page-break-inside: avoid;
+        }
+        #founding-lab-member {
+            page-break-after: avoid;
+        }
+
+        #cv-content {
+            padding: 0;
+            margin: 0;
+        }
+        .section {
+            position: relative;
+            margin-bottom: 15px;
+            page-break-inside: avoid;
+        }
+        .section-content {
+            width: calc(100% - 120px);
+            padding-right: 10px;
+        }
+        .section-date {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 110px;
+            text-align: right;
+            font-size: 7pt;
+            line-height: 1.2;
+            color: #333;
+            font-family: 'IBM Plex Sans', monospace;
+            
+        }
+        h1, h2, .main-header {
+            font-size: 10pt;
+            color: #333;
+            margin-bottom: 5px;
+            line-height: 1.2;
+            font-weight: bold;
+        }
+        h2, .main-header {
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 4.5fr 1fr;
+            gap: 10px;
+        }
+        .grid-item {
+            margin-bottom: 0px;
+        }
+        .grid-item-date {
+            margin-top: 10px;
+            white-space: nowrap;
+            text-align: left;
+        }
+        .institution, .role {
+            font-weight: 600;
+        }
+        .date {
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .certification-grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 10px;
+        margin-bottom: 10px;
+        }
+
+        .certification-grid p {
+            margin: 5px 0;
+        }
+
+        .lang-grid {
+            display: flex;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 5px;
+        }
+
+        .toolkit-grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 3fr; /* Creates two equal-width columns */
+        grid-gap: 20px; /* Adds space between the columns */
+        width: 100%; /* Ensures the grid takes up the full width of its container */
+        box-sizing: border-box; /* Includes padding and border in the element's width and height */
+        padding-top: 10px;
+        }
+
+        .toolkit-grid div {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start; /* Aligns text to the start (left) */
+
+            
+        }
+
+        .toolkit-grid p {
+            margin: 0; /* Removes default margin from paragraphs */
+            line-height: 1.5; /* Ensures good readability with proper line spacing */
+        }
+
+        .des {
+            line-height: 1.1; /* Reduced line height for description */
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .passions-grid {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr 3fr; /* Creates two equal-width columns */
+            grid-gap: 20px; /* Adds space between the columns */
+            width: 100%; /* Ensures the grid takes up the full width of its container */
+            box-sizing: border-box; /* Includes padding and border in the element's width and height */
+            padding-top: 10px;
+
+        }
+        .download-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        @media print {
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .download-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="cv-content">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div>
+                <h1 style="margin-top: 0px;">SONIA LITWIN</h1>
+                <p>she/her | Warsaw, Poland</p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center;"> <!-- Adjusted alignment -->
+            <p style="max-width: 75%; margin: 0;">
+                I am a PhD candidate in Computer Science Research Centre at the Royal College of Art. My research interests are in the AI companionship and new class of risks stemming from the emotional relationships with the artificial agents and the uncertainty of their impact on the level of individuals and the level of society.
+            </p>
+            <div class="contact-info" style="margin-left: 20px; line-height: 1.2;"> <!-- Reduced line spacing -->
+                <p style="margin: 0;">(+48) 781 712 244</p>
+                <p style="margin: 0;">sonia.litwin.ibm@gmail.com</p>
+                <p style="margin: 0;">www.sonialitwin.com</p>
+                <p style="margin: 0;">GitHub: SLab28</p>
+            </div>
+        </div>
+        
+        
+        <h2 class="main-header">ACADEMIC PROFILE</h2>
+        <div class="section">
+            <div class="section-date">| 06.2022 - 08.2022</div>
+            <div class="section-content">
+                <p><span class="role">MEng BIOMEDICAL ENGINEERING</span>, Warsaw University of Technology</p>
+                <p>GPA 4.41/5.0, FINAL 5.0</p>
+                <ul>
+                    <li>Thesis: "Human-Centered Systems Thinking: Humanity, Nature, and Technology in Social Robot Design."</li>
+                    <li>Jointly supervised by WUT academics and research scientists at Festo Bionics, the Festo Innovation R&D unit in Esslingen, Germany.</li>
+                    <li>Primary Advisor: Professor Mariusz Olszewski, PhD, DSc</li>
+                    <li>Secondary Advisor: Elias Knubben, Vice President of Research and Innovation, Festo</li>
+                </ul>
+            </div>    
+        </div>        
+        <div class="section">
+            <div class="section-date">| 09.2021 - 07.2022</div>
+            <div class="section-content">
+                <p>Visiting Erasmus Scholar</p>
+                <ul>
+                    <li>University of Twente, The Netherlands. Concentration in Computer Vision, Social Robotics, Human-Computer Interaction in Healthcare.</li>
+                </ul>
+            </div>   
+        </div>
+
+        <div class="section">
+            <div class="section-date">| 10.2017 - 02.2021</div>
+            <div class="section-content">
+                <p><span class="role">BEng BIOMEDICAL ENGINEERING</span>, Warsaw University of Technology</p>
+                <p>GPA 4.47/5.0, FINAL 5.0</p>
+                <ul>
+                    <li>Thesis: "Development and Implementation of Fundamental Design Concepts for "*Cthulhu* 2.0*" Robotic Cat in Collaboration with Festo Poland Application Center."</li>
+                    <li>Academia-Industry Collaboration with Festo Poland Application Centre in Warsaw, Poland.</li>
+                    <li>Primary Advisor: Professor Mariusz Olszewski, PhD, DSc</li>
+                    <li>Secondary Advisor: Adam Kwiatkowski, Head of Automation Engineering, Festo</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-date">| 01.2020 - 06.2020</div>
+            <div class="section-content">
+                <p>Visiting Erasmus Scholar</p>
+                <ul>
+                    <li>Universidad Carlos III De Madrid, Spain. Concentration in Bioinformatics, Data Science, Engineering Management.</li>
+                </ul>
+            </div>
+        </div>
+            
+        <div class="main-header">HIGHLIGHTS</div>
+        <div class="section">
+            <p><span class="role">xLab Incubator "From Idea to Demonstrator"</span></p>
+            <p>Directed a team of 3 students. Deployed S/4 HANA-based KPI dashboard for a medical service provider. Team systematized performance metrics into 3 interactive report pages in 3 months. Coordinated metrics optimization and system building with 5 SAP representatives and 3 client senior managers to ensure accuracy and needs fulfillment.</p>
+        </div>
+
+        <div class="section">
+            <p><span class="role">VII National Conference Advances in Biomedical Research</span></p>
+            <p>Chaired the organizing committee of the VII National Conference on Advances in Biomedical Research, delivering a three-day event for over 100 participants at Collegium Anatomicum in Warsaw.</p>
+        </div>
+
+        <div class="section">
+            <p><span class="role">KNAB Academic Circle of Biomedical Apparatus</span></p>
+            <p>Pitched EEGenius, a 3D-printed EEG device project, to the Faculty Board, raising funds during a university-wide competition. Led the EEG headset hardware development from the initial concept to a functional prototype.</p>
+        </div>
+
+        <p><strong>Selected Institutional service:</strong></p>
+        <ul>
+            <li>IEEE Collabratec Member,</li>
+            <li>S.V. Paradoks Study Association of Biomedical Engineering and Technical Medicine,</li>
+            <li>KNTG Polygon Game Developers Scientific Circle</li>
+        </ul>
+        <div class="main-header">PROFESSIONAL EXPERIENCE</div>
+        <div id="founding-lab-member" class="section">
+            <div class="section-date">| 03.2023 - present</div>
+            <div class="section-content">
+                <p><span class="role">RESEARCH ENGINEER</span>, SLab2.8</p>
+                <p>Vienna, Austria</p>
+                <ul>
+                    <li>Researched and developed a pipeline for patient pose estimation based on an RGB and RGBD cameras and open-source computer vision libraries building proprietary technology that increased client competitive advantage.</li>
+                    <li>Initiated the UX/UI design research and guided workshops with 3 physiotherapists. Uncovered needs and constraints to design hardware and software that improve the interaction between technology, physiotherapist and the patient.</li>
+                    <li>Enabled the Vienna-based physiotherapy client to quantify subjective therapy measures, resulting in a new, data-driven approach to patient care. Ensured system safety, privacy, and accuracy. Collaborated with developers in rapid prototyping of the MVP.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="founding-lab-member" class="section">
+            <div class="section-date">| 07.2023 - 02.2024</div>
+            <div class="section-content">
+                <p><span class="role">FOUNDING LAB MEMBER</span>, Ars Electronica</p>
+                <p>Linz, Austria</p>
+                <ul>
+                    <li>Consulted on topics of societal impacts of technology in the digital future. Collaborated with 24 Students, 21 Fellows, and the University Founding Committee to develop a novel model of education for IT:U - Interdisciplinary Transformation University Austria.</li>
+                    <li>Developed a project that leveraged complex cognitive and neuroscience to understand how exposure to digital experiences impact emotional responses and behaviour in society. Collaborated with MIT Media Lab and Meta Research representatives in creating an immersive art experience. Delivered 1 website, 1 national press article, 2 exhibitions, and a live-streamed keynote "Exploring Humanity in the Digital Age" at the Ars Electronica Center.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="visiting-associate" class="section">
+            <div  class="section-date">| 01.2023 - 03.2023</div>
+            <div class="section-content">
+                <p><span class="role">VISITING ASSOCIATE</span>, BCG Platinion</p>
+                <p>Helsinki, Finland</p>
+                <ul>
+                    <li>Interviewed 20 key stakeholders during ERP transformation. Presented insights to the team informing the change management strategy, putting human needs at the forefront of the system design process.</li>
+                    <li>Taken advantage of data science expertise to ensure the maintenance of database integrity during the consolidation of three business branches, contributing to a successful merger.</li>
+                    <li>Collaborated on the delivery of an AI impact report for the "IDC MarketScape: Worldwide Artificial Intelligence Services 2023 Vendor Assessment," instrumental in BCG's recognition as a leader in the digital transformation domain.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-date">| 06.2022 - 08.2022</div>
+            <div class="section-content">
+                <p><span class="role">DESIGN ENGINEER</span>, Festo SE & Co. KG</p>
+                <p>Esslingen, Germany</p>
+                <ul>
+                    <li>Created a prototype of a social robot supporting patient mental well-being that was recognized by 3 nationwide awards.</li>
+                    <li>Extensively researched 2D/3D marker-less pose estimation and biomechanics to understand biology through digital technology. Used open-source tools to develop biomimetic robot hardware implemented as a digital twin in simulation software.</li>
+                    <li>Tinkered with 4 types of 3D printers and more than 7 different materials. Designed a cable-driven actuation system powered by ODrive precision motor control. Created a set of processes and systems that allow for design of social robots informed by cognitive psychology improving social affordance of robotic personal assistants.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-date">| 06.2022 - 08.2022</div>
+            <div class="section-content">
+                <p><span class="role">RESEARCH ASSISTANT</span>, Fraunhofer IPA</p>
+                <p>Stuttgart, Germany</p>
+                <ul>
+                    <li>Conducted scientific research in the fields of machine learning, computer vision, and 3D image reconstruction, exploring innovative approaches and methodologies to advance the state-of-the-art in the field.</li>
+                    <li>Collaborated in a flat-rank team to create a dataset to train item recognition in robots used for the inspection of shop floors.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-date">| 03.2020 - 03.2021</div>
+            <div class="section-content">
+                <p><span class="role">SALES ENGINEER</span>, Intel Technology</p>
+                <p>Warsaw, Poland</p>
+                <ul>
+                    <li>Supported clients in solving implementation challenges for Intel gaming, IoTG, and AI-leading software solutions. Gained in-depth knowledge of technological business enablement, client communication, and relationship management.</li>
+                    <li>Delivered Salesforce reporting training for 5 senior managers, improving data-driven decision-making and performance tracking among sales teams in the EMEA territory distribution region.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-date">| 08.2018 - 09.2018</div>
+            <div class="section-content">
+                <p><span class="role">FIELD ENGINEER</span>, Siemens Healthineers</p>
+                <p>Warsaw, Poland</p>
+                <ul>
+                    <li>Performed hardware/software testing of hospital imaging and robotics equipment. Ensured compliance with the highest quality standards in 3 hospital locations in 2 cities in Poland.</li>
+                    <li>Participated in developing a positioning strategy for Siemens portfolio. Analysed the current market and identified the competitive advantage of Siemens products to drive sales growth.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-header">VOLUNTARY EXPERIENCE</div>
+        <div class="section">
+            <div class="section-date">| 09.2020</div>
+            <div class="section-content">
+                <p><span class="role">RUNNER</span>, Poland Business Run 2020</p>
+                <p>Warsaw, Poland</p>
+                <p>Competed as one of 18 thousand athletes in a charity run that raised almost 25 thousand euros donated to over 55 amputees and people with motor disabilities resulting in beneficiaries receiving 11 limb prostheses, 4 active wheelchairs and 45 rehabilitation camps.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-date">| 08.2018</div>
+            <div class="section-content">
+                <p><span class="role">FACILITATOR</span>, Siemens</p>
+                <p>Warsaw, Poland</p>
+                <p>Organized 2 days of Design Thinking workshops. Guided teamwork of executives representing 5 public institutions. Facilitated lateral thinking methods to discover how workspaces can become more inclusive for people with disabilities.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-date">| 09.2017</div>
+            <div class="section-content">
+                <p><span class="role">IT FOR SHE FELLOW</span>, Perspektywy</p>
+                <p>Ustrzyki Dolne, Poland</p>
+                <p>Designed and tutored 20 hours of workshops over one week in the fields of programming and game design with Scratch, 3D printing, and robotics for 18 primary school children advancing technological innovation knowledge in a small city. Promoted Women in Technology.</p>
+            </div>
+        </div>
+
+        <div class="main-header">HONORS & AWARDS</div>
+        <div class="section">
+            <div class="section-date">| 03.2023</div>
+            <div class="section-content">
+                <p><span class="role" style="text-transform: uppercase;">Distinction</span>, "XV Nationwide Young Innovative 2023 Thesis Contest"</p>
+                <p>Awarded for the Best Master of Engineering Diploma. 2 distinctions awarded nationwide on the merit of future impact and knowledge development.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-date">| 10.2021</div>
+            <div class="section-content">
+                <p><span class="role" style="text-transform: uppercase;">1st place</span>, "XIII Nationwide Young Innovative 2021 Thesis Contest"</p>
+                <p>Awarded for the Best Bachelor of Engineering Diploma. 7 diploma theses recognized nationwide, with the single main award on bachelor, doctoral, and master levels. Łukasiewicz Research Network – Industrial Research Institute for Automation and Measurements.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-date">| 10.2021</div>
+            <div class="section-content">
+                <p><span class="role" style="text-transform: uppercase;">1st place</span> in IEEE Thesis Contest 2021</p>
+                <p>Awarded for the Best Bachelor Diploma Thesis in Biomedical Engineering. The diploma is a symbol of cooperation between IEEE-University-Business. Evaluation based on innovation, level of implementation, and quality of the project development. Polish Section IEEE, Global Solutions Centre IT Roche, and Billon Group.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-date">| 09.2021</div>
+            <div class="section-content">
+                <p><span class="role" style="text-transform: uppercase;">Scholar</span>, Halina Konopacka Jubilee Scholarship Program "65 for 65"</p>
+                <p>Awarded toward education and skills development to 65 students based on the competitive nationwide assessment of merit, academic achievements, and future leadership potential.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-date">| 12.2019</div>
+            <div class="section-content">
+                <p><span class="role" style="text-transform: uppercase;">Scholar</span>, Rector's Award</p>
+                <p>Awarded only to the top 8% of the students based on the cumulative grade and extracurricular achievements. Received the scholarship in 2019, 2020, 2021 & 2022 for the duration of the academic year. Warsaw University of Technology.</p>
+            </div>
+        </div>
+
+        <div class="main-header">DISSEMINATION</div>
+
+        <div class="section">
+            <div class="section-date">| 01.2024</div>
+            <div class="section-content">
+                <p><span class="role" style="text-transform: uppercase;">"Beyond Boundaries: Exploring Humanity in The Digital Age"</span>, Exhibition & Panel Speaker</p>
+                <p>Litwin, S. (2024, January 23-25). Beyond Boundaries: Project Insights & Process Presentations [Conference Panel]. FOUNDING LAB Event: Fall Term Outcomes. - Interdisciplinary Transformation University Austria, Linz, Austria.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-date">| 09.2023</div>
+            <div class="section-content">
+                <p><span class="role" style="text-transform: uppercase;">"Who Owns The Truth?: Unveiled Truths, Brain Computer Interfaces"</span>, Exhibition</p>
+                <p>Sipos, R., Wipprecht, A., Guger, C., Litwin, S., et al. (2023, September 6-10). Unveiled Truths [Exhibition]. FOUNDING LAB Summer School Exhibition: Ars Electronica Festival - Ars Electronica, Linz, Austria.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-date">| 03.2023</div>
+            <div class="section-content">
+                <p><span class="role" style="text-transform: uppercase;">"Human-Centered Systems Thinking in Social Robot Design"</span>, Conference Presentation</p>
+                <p>Litwin, S., & Olszewski, M. (2023, March 7–8). Human-centered Systems Thinking in Social Robot Design [Paper presentation]. Scientific and Technical Conference AUTOMATION 2023 — News and Perspectives, Warsaw, Poland.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-date">| 09.2021</div>
+            <div class="section-content">
+                <p><span class="role" style="text-transform: uppercase;">"An Innovative Project of a Bionic Robot"</span>, Conference Presentation</p>
+                <p>Litwin, S., & Olszewski, M. (2021, September 23–24). Project of a bionic robot [Paper presentation]. Conference XXV AUTOMATION 2021 — News and Perspectives, Łukasiewicz Research Network, Warsaw, Poland.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-date">| 04.2021</div>
+            <div class="section-content">
+                <p><span class="role" style="text-transform: uppercase;">"An Innovative Project of a Bionic Robot For Social Applications in Felinotherapy"</span>, Peer-reviewed Publication</p>
+                <p>Litwin S., Woźniak K., Olszewski M., An Innovative Project of a Bionic Robot for Social Applications in Felinotherapy, „Pomiary Automatyka Robotyka", Vol. 25, No. 4/2021, 5-18, DOI: 10.14313/PAR_242/5.</p>
+            </div>
+        </div>
+
+        <div class="main-header">CERTIFICATION</div>
+
+        <div class="certification-grid">
+            <div>
+                <p class="role">Agent-Based Modeling</p>
+                <p>Santa Fe Institute Complexity Explorer</p>
+            </div>
+            <div>
+                <p>Exploring agent-based modelling to understand the behaviour of complex and intelligent systems. Learning how to discover simple rules to build a model and analyse the results using NetLogo programming language. Ongoing.</p>
+            </div>
+            <div>
+                <p class="role">BCI & Neurotechnology</p>
+                <p>g.tec medical engineering GmbH</p>
+            </div>
+            <div>
+                <p>Completed 140 hours of lectures and tutorials learning the latest advancements in neurotechnology and their impact on society. Participated in the BR41N.IO hackathon analysing somatosensory evoked potentials (SSEPs) from ultra-high-density EEG system (uHD EEG).</p>
+            </div>
+            <div>
+                <p class="role">Product Design Short Course</p>
+                <p>University of the Arts London</p>
+            </div>
+            <div>
+                <p>Emphasised the creative process and self-direction. Generated ideas through design thinking from initial brief, and product design to presentation of outcomes. 25 hours, in-person, studio-based.</p>
+            </div>
+            <div>
+                <p class="role">Visual Storytelling</p>
+                <p>University of Twente Language Centre</p>
+            </div>
+            <div>
+                <p>Learned best practices of visual communication in presentation and graphic design. Employed principles of ethos, pathos and logos to engage the audience. Sketched a storyboard, practised storytelling and tested prototypes with the target group. 4 workshops, 3 hours each.</p>
+            </div>
+        </div>
+
+        <h2>LANGUAGE EXCELLENCE</h2>
+        <div class="lang-grid">
+            <div>
+                <p><strong>ENGLISH C2</strong></p>
+                <p>Business Proficiency: CAE 195/210, TOEFL iBT 110/120</p>
+            </div>
+            <div>
+                <p><strong>SPANISH B2</strong></p>
+                <p>Intermediate: Certified by Instituto Cervantes de Varsovia</p>
+            </div>
+            <div>
+                <p><strong>FRENCH A2</strong></p>
+                <p>Warsaw University of Technology Language Centre</p>
+            </div>
+            <div>
+                <p><strong>POLISH</strong></p>
+                <p>Native</p>
+            </div>
+        </div>
+
+        <div class="main-header">TOOLKIT</div>
+        <div class="toolkit-grid">
+            <div>
+                <p><strong>ENGINEERING:</strong></p>
+            </div>
+            <div>                
+                <p>Robotics: ML/RL/ROS/Computer Vision,</p> 
+                <p>Multimodal Sensors: EEG/ECG/Skin conductance,</p>
+                <p>Project Management: GitHub/Asana/Tableau,</p>
+                <p>Programming: Python/Matlab/C++/R/SQL</p>
+            </div>
+        
+            <div>
+                <p><strong>DESIGN:</strong></p>
+            </div>
+            <div> 
+                <p>Design: Adobe Illustrator/Photoshop/Figma,</p>
+                <p>Video & Sound: DaVinci Resolve/Audacity/Reaper,</p>
+                <p>Prototyping: 3D printing (FDM, SLA, SLS)/Electronics/Soldering,</p>
+                <p>CAD: Fusion 360/Blender/Maya</p>
+            </div>
+        </div>
+
+        <h2>PASSIONS</h2>
+        <div class="passions-grid">
+            <div></div>
+            <div>
+                <p>New Media Art, Neuroscience, Tinkering, Robotics</p>
+                <p>Specialty Coffee: Washed Columbia Medellín, Light Roast</p>
+                <p>Mirror-less Photography</p>
+            </div>
+            <div></div>
+            <div>
+                <p>High impact sports: Cross Fit, Running, Motorcycling</p>
+                <p>Podcasts: Tim Ferris Show, The Human Upgrade</p>
+                <p>Reading: Haruki Murakami, The Alchemist, MIT Technology Review</p>
+            </div>
+        </div>
+    
+
+
+    </div>
+
+    <button class="download-btn" onclick="downloadPDF()">Download PDF</button>
+
+    <script>
+        function downloadPDF() {
+            const element = document.getElementById('cv-content');
+            const originalWidth = element.offsetWidth;
+            const a4Height = 297; // A4 height in mm
+    
+            const opt = {
+                margin: [5, 5, 10, 5],
+                filename: 'sonia_litwin_cv.pdf',
+                image: { type: 'jpeg', quality: 0.75 },
+                html2canvas: { 
+                    scale: 3,
+                    useCORS: true,
+                    letterRendering: true,
+                    width: originalWidth,
+                    dpi:300
+                },
+                jsPDF: { 
+                    unit: 'mm', 
+                    format: [originalWidth / 3.7795275591, a4Height],
+                    orientation: 'portrait',
+                    compress: true,
+                    precision:30,
+                    
+                },
+                pagebreak: { mode: ['legacy'] }
+            };
+    
+            html2pdf().from(element).set(opt).save();
+        }
+        </script>
+</body>
+</html>
